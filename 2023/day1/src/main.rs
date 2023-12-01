@@ -1,14 +1,5 @@
 use std::fs;
 
-// Simple Part 1 Solution
-// sum += [
-//     line.chars().collect::<Vec<char>>()[line.find(char::is_numeric).unwrap()].to_string(),
-//     line.chars().collect::<Vec<char>>()[line.rfind(char::is_numeric).unwrap()].to_string(),
-// ]
-// .join("")
-// .parse::<u16>()
-// .unwrap();
-
 fn main() {
     let contents = fs::read_to_string("input.txt").expect("Should have been able to read the file");
     let mut part1_sum: u16 = 0;
