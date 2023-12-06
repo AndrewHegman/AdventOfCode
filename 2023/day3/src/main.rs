@@ -113,6 +113,7 @@ fn main() {
         for pt in num.1 {
             let c = matrix[usize::from(pt.1)][usize::from(pt.0)];
             if !c.is_digit(10) && c != '.' && !part_added {
+                println!("{}", num.0);
                 part1_sum += TryInto::<u32>::try_into(num.0).unwrap();
                 part_added = true;
             }
